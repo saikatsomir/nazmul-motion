@@ -25,18 +25,18 @@ export const Banner = () => {
             <h1 className="text-gray-500 font-medium text-xl mb-3">
               Hi There, I am <span className="text-white">Nazmul</span>
             </h1>
-            <h1 className="text-6xl font-bold leading-[70px] uppercase -ml-0.5">
+            <h1 className="h-title text-6xl font-bold leading-[70px]  -ml-0.5">
               Learn the <br /> top <span className="text-[#6339b7]">1%</span>{' '}
-              secrets <br /> in Motion Design.
+              secrets in motion design.
             </h1>
-            <h1 className="text-lg pt-3 w-[70%] text-gray-400 font-light">
+            <h1 className="h-des text-3xl pt-3  text-gray-400 font-light">
               Learn and earn with high-demand, low-competition motion design
               skills.
             </h1>
             <button
               style={{
                 background:
-                  'linear-gradient(90deg,rgba(135, 1, 96, 1) 0%, rgba(99, 57, 183, 1) 65%)',
+                  'linear-gradient(-90deg,rgba(251, 179, 95, 1) 15%, rgba(107, 91, 248, 1) 82%)',
               }}
               className="text-white font-medium text-lg cursor-pointer w-52 h-12 mt-8 rounded-full flex justify-center items-center gap-3"
             >

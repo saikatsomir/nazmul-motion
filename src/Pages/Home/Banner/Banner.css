@@ -7,7 +7,12 @@
     transform: translateX(20px);
   }
 }
-
+.h-title {
+  font-family: 'Bricolage Grotesque', sans-serif;
+}
+.h-des {
+  font-family: 'Syne', sans-serif;
+}
 .animate-floatLR {
   animation: floatLR 6s ease-in-out infinite;
 }

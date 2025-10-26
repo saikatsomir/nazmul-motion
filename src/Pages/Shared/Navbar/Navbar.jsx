@@ -8,11 +8,14 @@ export const Navbar = () => {
 
   // Handle scroll to hide/show navbar
   const controlNavbar = () => {
-    if (window.scrollY > lastScrollY) {
-      // Scrolling down
+    if (window.scrollY <= 150) {
+      // Always show navbar for first 120px
+      setShow(true);
+    } else if (window.scrollY > lastScrollY) {
+      // Scrolling down beyond 120px → hide
       setShow(false);
     } else {
-      // Scrolling up
+      // Scrolling up → show
       setShow(true);
     }
     setLastScrollY(window.scrollY);
@@ -50,7 +53,7 @@ export const Navbar = () => {
           <button
             style={{
               background:
-                'linear-gradient(90deg,rgba(135, 1, 96, 1) 0%, rgba(99, 57, 183, 1) 65%)',
+                'linear-gradient(-90deg,rgba(251, 179, 95, 1) 15%, rgba(107, 91, 248, 1) 82%)',
             }}
             className="text-white font-medium text-lg cursor-pointer w-44 h-12 rounded-full gap-3"
           >
