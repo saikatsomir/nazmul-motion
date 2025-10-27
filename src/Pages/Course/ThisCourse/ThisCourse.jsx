@@ -1,0 +1,158 @@
+import { useState } from 'react';
+import thumbail from './images/thumbnail.jpg';
+import bulb from './images/bulb.svg';
+import tube from './images/tube.svg';
+import code from './images/code.svg';
+
+export const ThisCourse = () => {
+  const skills = [
+    'Video ads & Commercials',
+    'Logo Animation',
+    'Motion Design for UI/UX',
+    '2D Explainer Video',
+    'SaaS Explainer',
+    'Motion for Social Media Ads',
+    'Motion Graphics Template',
+  ];
+
+  const path = [
+    {
+      img: tube,
+      name: '১০০০+ ভিডিও',
+      path: 'videos',
+      border: 'border-pink-500',
+      bg: 'bg-pink-500',
+      description:
+        'Programming Hero এর ওয়েব ডেভেলপমেন্ট বুটক্যাম্পে রয়েছে ১০০০ টিরও বেশি ভিডিও কন্টেন্ট, যেখানে MERN স্ট্যাক জিরো থেকে বিস্তারিত কাভার করা হয়েছে। এই ভিডিও কন্টেন্ট গুলো এডিটেড, এনিমেটেড - বাইট সাইজড, টপিক ধরে ধরে ডেভেলপড। যাতে সহজেই শিক্ষার্থীরা খুঁজে পায়। প্রতিটি ভিডিওতেই কনসেপ্টগুলো সহজভাবে ব্যাখ্যা করা হয়েছে, যাতে মৌলিক বিষয়গুলোর সাথে সাথে জটিল বিষয়ও সেরা উপায়ে শেখা যায়।',
+    },
+    {
+      img: bulb,
+      name: '৪৫+ প্রজেক্ট',
+      path: 'projects',
+      border: 'border-blue-500',
+      bg: 'bg-blue-500',
+      description:
+        'এই বুটক্যাম্পে রয়েছে ৪৫টিরও বেশি প্রজেক্ট, যেখানে শিক্ষার্থীরা শেখানো টপিকগুলো হাতে-কলমে প্র্যাকটিস করতে পারে। ছোট ছোট টাস্ক দিয়ে শুরু করে ধাপে ধাপে জটিল প্রজেক্টে নিয়ে যাওয়া হয়, যাতে স্কিল গুলো ধীরে ধীরে পাকাপোক্ত হয় এবং জটিল সমস্যা সমাধানে পারদর্শী হয়। কয়েকটি স্টান্ডার্ড ফুল স্ট্যাক প্রজেক্ট ও ডেভেলপ করা হবে।',
+    },
+    {
+      img: code,
+      name: '১২+ অ্যাসাইনমেন্ট',
+      path: 'assignments',
+      border: 'border-purple-500',
+      bg: 'bg-purple-500',
+      description:
+        'এই বুটক্যাম্পে আছে ১২টি আবশ্যকীয় অ্যাসাইনমেন্ট এবং একটি অপশনাল এসাইনমেন্ট। এসাইনমেন্ট করার মাধ্যামে শিখার্থীরা কেমন শিখেছে এবং তা নতুন প্রোজেক্টে কতটুকু ব্যবহার করতে পারছে—তা যাচাই করতে সহায়তা করে। ভিডিও কন্টেন্ট, কন্সেপচুয়াল সেশন ও প্রাক্টিস প্রজেক্ট থেকে শিক্ষার্থীরা যা শিখেছে, তার ভিত্তিতে তাদের থিওরিটিক্যাল নলেজ ও প্রাক্টিক্যালি তা প্রোজেক্টে এ্যাপ্লাই করার স্কিল পরিক্ষা-নিরিক্ষা করা হয়।',
+    },
+  ];
+
+  const colors = [
+    { bg: 'bg-pink-500/20', text: 'text-pink-400' },
+    { bg: 'bg-blue-500/20', text: 'text-blue-400' },
+    { bg: 'bg-green-500/20', text: 'text-green-400' },
+    { bg: 'bg-yellow-500/20', text: 'text-yellow-400' },
+    { bg: 'bg-purple-500/20', text: 'text-purple-400' },
+    { bg: 'bg-orange-500/20', text: 'text-orange-400' },
+    { bg: 'bg-cyan-500/20', text: 'text-cyan-400' },
+  ];
+
+  const [isPlaying, setIsPlaying] = useState(false);
+
+  const videoId = 'nCZbZyyuHRg';
+  const thumbnail = thumbail;
+
+  return (
+    <div
+      className="min-h-[260vh] pb-32"
+      style={{
+        background:
+          'linear-gradient(0deg,rgba(10, 6, 18, 1) 0%, rgba(17, 6, 39, 1) 46%, rgba(10, 6, 18, 1) 100%)',
+      }}
+    >
+      <div className="max-w-[1340px] mx-auto px-4">
+        {/* ===== Section Title ===== */}
+        <h1 className="text-3xl text-white text-center font-bold pt-20">
+          এই কোর্সে তুমি কী শিখবে?
+        </h1>
+
+        {/* ===== Skill Chips ===== */}
+        <div className="flex justify-center gap-6 flex-wrap mt-10">
+          {skills.map((skill, i) => {
+            const color = colors[i % colors.length];
+            return (
+              <div
+                key={i}
+                className={`${color.bg} ${color.text} px-6 py-3 rounded-xl font-medium text-lg transition-transform duration-300 hover:scale-105 cursor-default`}
+              >
+                {skill}
+              </div>
+            );
+          })}
+        </div>
+
+        {/* ===== YouTube Section ===== */}
+        <div className="w-[1000px] mx-auto h-[600px] rounded-3xl mt-16 overflow-hidden relative border-[5px] border-[#6339b7]">
+          {!isPlaying ? (
+            <div
+              className="w-full h-full cursor-pointer relative"
+              onClick={() => setIsPlaying(true)}
+            >
+              <img
+                src={thumbnail}
+                alt="Video Thumbnail"
+                className="w-full h-full bg-black/20 object-cover"
+              />
+              <div className="absolute inset-0 bg-black/30"></div>
+
+              <div className="absolute inset-0 flex items-center justify-center">
+                <div className="w-20 h-20 rounded-full bg-black flex items-center justify-center hover:scale-110 transition-transform duration-300">
+                  <div className="ml-1 w-0 h-0 border-l-8 border-l-white border-t-6 border-t-transparent border-b-6 border-b-transparent"></div>
+                </div>
+              </div>
+            </div>
+          ) : (
+            <iframe
+              className="w-full h-full"
+              src={`https://www.youtube.com/embed/${videoId}?autoplay=1`}
+              title="YouTube video"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          )}
+        </div>
+
+        <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-10 relative ">
+          <div className="absolute w-[120%] bg-[#110726] h-32 -left-36 -bottom-16 z-30 blur-[20px]" />
+          <div className="absolute w-[120%] bg-[#110726] h-32 -left-36 bottom-5 z-30 blur-[45px]" />
+
+          {path.map((item, i) => (
+            <div
+              key={i}
+              className={`relative border ${item.border} rounded-2xl p-8 text-white backdrop-blur-md bg-white/5 transition-all duration-300 overflow-hidden h-[500px]`}
+            >
+              <div
+                className={`absolute w-full h-10 blur-2xl   -top-10  left-0 ${item.bg}`}
+              ></div>
+              <div className="flex ">
+                <img
+                  src={item.img}
+                  alt={item.name}
+                  className="w-16 h-16 mb-2"
+                />
+              </div>
+              <h2 className="text-xl font-semibold  mb-4">{item.name}</h2>
+              <p className="text-gray-300 text-base leading-relaxed text-justify">
+                {item.description}
+              </p>
+
+              {/* Soft glowing border effect */}
+              <div
+                className={`absolute inset-0 rounded-2xl border ${item.border} opacity-20 blur-md`}
+              ></div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+};
