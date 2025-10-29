@@ -13,10 +13,10 @@ export const Home = () => {
       <Banner />
       <ServiceSkills />
       <Choice />
-      <Learn />
-      <WhyMe />
+      {/* <Learn /> */}
       <HomeCourse />
       <LearningPath />
+      <WhyMe />
       <Testimonial />
     </>
   );

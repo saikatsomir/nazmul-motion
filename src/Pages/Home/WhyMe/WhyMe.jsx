@@ -6,7 +6,7 @@ import { SlOrganization } from 'react-icons/sl';
 export const WhyMe = () => {
   return (
     <div className=" bg-[#0a0612] z-40 pb-40 relative">
-      <div className="absolute w-96 h-96 bg-[#4107a4] opacity-20 -bottom-60 right-0 blur-[100px]" />
+      <div className="absolute w-96 h-96 bg-[#4107a4] opacity-10 -top-[400px] right-0 blur-[100px] " />
       <div className="  max-w-[1340px] mx-auto relative z-40 ">
         <div className="bg-[#930F2F] blur-[2px] w-96 h-96 rounded-full absolute top-60 left-0 -z-10"></div>
         <div className="bg-[#0a0612] blur-[10px] w-[500px] h-28  absolute -bottom-20 -left-24 -z-10"></div>

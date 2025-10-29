@@ -12,33 +12,46 @@ import 'aos/dist/aos.css';
 
 const learningTracks = [
   {
-    title: 'Beginner Track',
-    description:
-      'Motion Basics, Keyframes, Easing, Graph Editor, Logo animation principles.',
+    title: 'After Effects Basics',
+    description: 'Learn the most fundamentals of after effects software.',
     icon: <FaReact size={28} className="text-purple-400" />,
   },
   {
-    title: 'Intermediate Track',
+    title: 'Social Media Ads Motion',
     description:
-      'Explainer video flow, storytelling, camera moves, transitions.',
+      'Design and animate social media ads that engage the audience.',
     icon: <FaVideo size={28} className="text-blue-400" />,
   },
   {
-    title: 'Pro Level',
+    title: 'Lottie & Web Motion',
     description:
-      'SaaS product animation, UI/UX motion, Lottie for websites, client workflow.',
+      'Bring your work to websites and apps with code-ready animations.',
     icon: <FaLaptopCode size={28} className="text-pink-400" />,
   },
   {
-    title: 'Advanced Techniques',
+    title: 'App or Web Showcase animation',
     description:
-      'Master complex timing, dynamic easing, and polished cinematic motion.',
+      'Take screenshots from clients and turn it into an amazing motion showcase',
     icon: <FaPencilRuler size={28} className="text-yellow-400" />,
   },
   {
-    title: 'Launch Project',
-    description:
-      'Final project showcasing all skills — includes feedback, reviews, and certification.',
+    title: 'Motion for Video Editing',
+    description: 'Learn the amazing 3D animation technique like Iman gadzhi.',
+    icon: <FaRocket size={28} className="text-cyan-400" />,
+  },
+  {
+    title: 'Explainer Video',
+    description: 'Turn stories into a compelling motion that sells ideas.',
+    icon: <FaRocket size={28} className="text-cyan-400" />,
+  },
+  {
+    title: 'SaaS Explainers',
+    description: 'Animate user flows, dashboards, and product journeys.',
+    icon: <FaRocket size={28} className="text-cyan-400" />,
+  },
+  {
+    title: 'Logo Animation',
+    description: 'Learn to animate brand identities that feel alive.',
     icon: <FaRocket size={28} className="text-cyan-400" />,
   },
 ];
@@ -102,7 +115,7 @@ export const LearningPath = () => {
   }, []);
 
   return (
-    <div className="relative bg-[#0a0612] text-white  ">
+    <div className="relative bg-[#0a0612] text-white pb-40 ">
       {/* <div className="absolute w-96 h-96 bg-[#4107a4] opacity-15 top-60 left-0 blur-[100px] z-50" />
       <div className="absolute w-96 h-96 bg-[#4107a4] opacity-15 top-1/3 right-0 blur-[100px] z-50" />
       <div className="absolute w-96 h-96 bg-[#4107a4] opacity-15 bottom-0 left-0 blur-[100px] z-50" /> */}
@@ -138,7 +151,7 @@ export const LearningPath = () => {
 
         {/* Timeline Cards */}
         <div className="space-y-24 relative z-10">
-          {learningTracks.slice(0, 4).map((track, index) => {
+          {learningTracks.slice(0, 7).map((track, index) => {
             const isLeft = index % 2 === 0;
 
             return (

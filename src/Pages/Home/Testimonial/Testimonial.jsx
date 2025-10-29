@@ -18,7 +18,7 @@ export const Testimonial = () => {
   }
 
   return (
-    <div className="bg-[#0a0612] py-32 h-auto relative z-40 overflow-hidden">
+    <div className="bg-[#0a0612] py-32 h-auto relative z-40 ">
       {/* Decorative Background Blur */}
       <div className="bg-[#0a0612] w-full h-32 blur-2xl absolute top-[300px] z-30" />
 
