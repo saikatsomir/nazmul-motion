@@ -22,9 +22,9 @@ export const Banner = () => {
       <div className="w-[1340px] mx-auto">
         <div className="flex flex-col md:flex-row items-center mt-32">
           <div className="w-full md:w-1/2 mb-10 md:mb-0">
-            <h1 className="text-gray-500 font-medium text-xl mb-3">
+            {/* <h1 className="text-gray-500 font-medium text-xl mb-3">
               Hi There, I am <span className="text-white">Nazmul</span>
-            </h1>
+            </h1> */}
             <h1 className="h-title text-6xl font-bold leading-[70px]  -ml-0.5">
               Learn the <br /> top <span className="text-[#6339b7]">1%</span>{' '}
               secrets in motion design.
@@ -46,7 +46,7 @@ export const Banner = () => {
 
           {/* Right Image */}
           <div className="w-full md:w-1/2 relative flex justify-center">
-            <div className="absolute top-0 left-0 w-66 h-44 rounded-lg bg-white/10 backdrop-blur-2xl animate-floatLR p-4 flex flex-col justify-between shadow-lg">
+            {/* <div className="absolute top-0 left-0 w-66 h-44 rounded-lg bg-white/10 backdrop-blur-2xl animate-floatLR p-4 flex flex-col justify-between shadow-lg">
               <div className="flex items-center justify-center ">
                 <div className="flex -space-x-3">
                   <img
@@ -83,7 +83,7 @@ export const Banner = () => {
                   1.8K+ 5 Star Reviews
                 </p>
               </div>
-            </div>{' '}
+            </div>{' '} */}
             <div className="absolute -bottom-12 flex justify-center items-center right-40 w-72 py-4  rounded-lg bg-white/10 backdrop-blur-2xl animate-floatUpDown">
               <div className="flex items-center gap-3">
                 <div className="text-2xl text-white  bg-purple-600 w-12 h-12 rounded-full flex items-center justify-center">

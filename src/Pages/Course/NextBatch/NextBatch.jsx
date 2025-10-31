@@ -65,7 +65,7 @@ export const NextBatch = () => {
                 }}
                 className="text-white font-medium text-lg cursor-pointer w-44 h-12 mt-5 rounded-full flex justify-center items-center gap-3"
               >
-                Learn More
+                Enroll Now
               </button>
             </div>
           </div>

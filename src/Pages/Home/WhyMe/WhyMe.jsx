@@ -51,11 +51,11 @@ export const WhyMe = () => {
             </h1>
             <h1 className="text-gray-400">
               I’ve created 4,000+ brand animations for global clients and built
-              one of Bangladesh’s top motion design studios — Motionsbay. Now
-              I’m sharing everything I’ve learned — from creative process to
-              client work — so you can grow faster and earn globally.” Add
-              visuals like screenshots of Fiverr Pro badge, YouTube, Instagram
-              followers, etc.
+              one of Bangladesh’s top motion design studios — Motionsbay.Now I’m
+              sharing everything I’ve learned — from creative process to client
+              work — so you can grow faster and earn globally.” Add visuals like
+              screenshots of Fiverr Pro badge, YouTube, Instagram followers,
+              etc.
             </h1>
             <div className="flex gap-10 mt-16">
               <div className="w-[50%] h-52 border border-gray-800 rounded-2xl py-7 px-5 relative overflow-hidden">

@@ -1,17 +1,17 @@
-import { MdArrowOutward } from 'react-icons/md';
-
 export const CourseBanner = () => {
   return (
     <div className=" bg-[#0a0612] relative z-40 pt-32 overflow-hidden">
       <div className="max-w-[1340px] mx-auto  py-24">
-        <h1 className="text-white text-4xl font-bold text-center">
-          শূন্য থেকে শুরু করে হয়ে ওঠো প্রফেশনাল মোসান <br /> ডিজাইনার নিশ্চিত
-          করো তোমার ভবিষ্যৎ জব/ইন্টার্নশিপ
+        <h1
+          className="text-white text-5xl font-bold text-center"
+          style={{ fontFamily: 'Bricolage Grotesque' }}
+        >
+          This course is structured to guide you <br /> step by step from basics
+          to advanced skills.
         </h1>
         <h1 className="text-gray-400 text-lg pt-4 text-center w-[80%] mx-auto">
-          Javascript, React, Node.js, MongoDB এবং Express শিখে শুন্য থেকে দক্ষ
-          ফুল-স্ট্যাক ওয়েব অ্যাপ্লিকেশন তৈরি করা শেখো। ফ্রন্টএন্ডে এডভান্স হওয়ার
-          সাথে শিখে নাও ব্যাকএন্ডও, যেন ইউজারকে দিতে পারো স্মুথ এক্সপেরিয়েন্স।
+          You will learn the top demanding motion design skills that a company
+          is looking for.
         </h1>
         <div className="flex justify-center ">
           <button
@@ -21,7 +21,7 @@ export const CourseBanner = () => {
             }}
             className="text-white font-medium text-lg cursor-pointer w-52 h-12 mt-5 rounded-full flex justify-center items-center gap-3"
           >
-            Learn More <MdArrowOutward className="text-2xl" />
+            Learn More
           </button>
         </div>
       </div>
