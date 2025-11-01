@@ -12,7 +12,7 @@ export const Course = () => {
       <NextBatch />
       <ThisCourse />
       <CourseFaq />
-      <CourseFaq2 />
+      {/* <CourseFaq2 /> */}
       <Testimonial />
     </div>
   );

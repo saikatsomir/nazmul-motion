@@ -50,7 +50,7 @@ export const Choice = () => {
             </h1>
           </div>
 
-          <button
+          {/* <button
             style={{
               background:
                 'linear-gradient(-90deg,rgba(251, 179, 95, 1) 15%, rgba(107, 91, 248, 1) 82%)',
@@ -59,7 +59,7 @@ export const Choice = () => {
           >
             Learn More
             <MdArrowOutward className="text-2xl" />
-          </button>
+          </button> */}
         </div>
 
         {/* Cards */}

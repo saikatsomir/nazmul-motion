@@ -169,20 +169,22 @@ export const CourseFaq = () => {
           'linear-gradient(0deg, rgba(10,6,18,1) 40%, rgba(17,6,39,1) 100%)',
       }}
     >
-      <div className="max-w-5xl mx-auto text-white">
-        <h1 className="text-4xl sm:text-5xl font-semibold mb-10 z-50">
-          Course Duration: <br />
-          <span className="text-purple-400">3–4 months</span>
+      <div className="max-w-[1340px] mx-auto text-white border border-gray-800 py-16 rounded-3xl z-10 bg-[#0a0612]/30 ">
+        <h1
+          className="text-4xl sm:text-5xl font-semibold mb-10 z-50 text-center"
+          style={{ fontFamily: 'Bricolage Grotesque' }}
+        >
+          Course Duration: <span className="text-purple-400">3–4 months</span>
         </h1>
 
-        <div className="space-y-4">
+        <div className="space-y-4 max-w-5xl mx-auto">
           {faqs.map((faq, index) => (
             <div
               key={index}
-              className="bg-[#130c23]/60 backdrop-blur-md rounded-2xl border border-white/10 overflow-hidden "
+              className=" backdrop-blur-md rounded-2xl border border-gray-900 overflow-hidden "
             >
               <button
-                className="w-full flex justify-between items-center px-6 py-6 text-left hover:bg-white/5 transition-colors duration-300 cursor-pointer"
+                className="w-full flex justify-between items-center px-6 py-6 text-left transition-colors duration-300 cursor-pointer"
                 onClick={() =>
                   setActiveIndex(activeIndex === index ? null : index)
                 }

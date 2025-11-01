@@ -27,7 +27,7 @@ export const ServiceSkills = () => {
                 key={i}
                 style={{
                   background:
-                    'linear-gradient(90deg,rgba(82, 44, 158, 1) 0%, rgba(33, 13, 87, 1) 75%)',
+                    'linear-gradient(-90deg,rgba(251, 179, 95, 1) 15%, rgba(107, 91, 248, 1) 82%)',
                 }}
                 className="text-white text-[15px] md:text-xl font-medium w-72 text-center px-4 py-4 rounded-full hover:bg-[#d9d9d9] transition"
               >

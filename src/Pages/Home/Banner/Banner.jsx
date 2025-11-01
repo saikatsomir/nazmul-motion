@@ -26,8 +26,9 @@ export const Banner = () => {
               Hi There, I am <span className="text-white">Nazmul</span>
             </h1> */}
             <h1 className="h-title text-6xl font-bold leading-[70px]  -ml-0.5">
-              Learn the <br /> top <span className="text-[#6339b7]">1%</span>{' '}
-              secrets in motion design.
+              Learn the <br /> top{' '}
+              <span className="text-[#6339b7]">1% secrets</span> in motion
+              design.
             </h1>
             <h1 className="h-des text-3xl pt-3  text-gray-400 font-light">
               Learn and earn with high-demand, low-competition motion design
@@ -84,20 +85,23 @@ export const Banner = () => {
                 </p>
               </div>
             </div>{' '} */}
-            <div className="absolute -bottom-12 flex justify-center items-center right-40 w-72 py-4  rounded-lg bg-white/10 backdrop-blur-2xl animate-floatUpDown">
-              <div className="flex items-center gap-3">
-                <div className="text-2xl text-white  bg-purple-600 w-12 h-12 rounded-full flex items-center justify-center">
-                  ?
-                </div>
-                <h1 className="text-lg">Need Consultation?</h1>
+            <div className="absolute  -bottom-8 flex justify-center items-center right-40 w-64  h-16 rounded-lg bg-[#372675] backdrop-blur-2xl animate-floatUpDown">
+              <div className=" -mt-3">
+                <h1 className="text-2xl h-8  text-justify after:content-[''] after:inline-block after:w-full">
+                  Nazmul Hoque
+                </h1>
+                <h1 className="text-sm  h-3 text-justify after:content-[''] after:inline-block after:w-full">
+                  Your motion design mentor
+                </h1>
               </div>
             </div>
+
             <img src={hero} alt="Hero" className="" />
           </div>
         </div>
         <div className="flex justify-between items-center  mt-28  w-full">
           <div className="">
-            <p className=" text-xl text-gray-200">Taught by Nazmul</p>
+            <p className=" text-xl text-gray-200">Founder</p>
             <p className="text-base font-extralight text-gray-400">
               Founder of Motionsbay
             </p>
@@ -129,7 +133,7 @@ export const Banner = () => {
           <div className="">
             <p className="font-medium">350+ Projects</p>
             <p className="text-base font-extralight text-gray-400">
-              Completed on Instagram
+              Completed on Motionsbay
             </p>
           </div>
           <div className="">
