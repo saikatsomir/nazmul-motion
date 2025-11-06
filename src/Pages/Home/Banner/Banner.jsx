@@ -11,7 +11,7 @@ export const Banner = () => {
   const thumbnail = thumbail;
 
   return (
-    <div className="bg-[#0a0612] min-h-screen text-white pt-28 relative overflow-hidden z-40">
+    <div className="bg-[#0a0612] min-h-screen text-white pt-28 relative overflow-hidden z-40 ">
       {/* Background lights */}
       <div className="absolute w-[400px] sm:w-[600px] h-[400px] sm:h-[600px] bg-[#1e1137] blur-[100px] -right-20 -top-20 -z-10" />
       <div className="absolute w-[400px] sm:w-[600px] h-[400px] sm:h-[600px] bg-[#060422] blur-[60px] -left-40 sm:-left-80 top-[30%] -z-10" />
@@ -25,8 +25,8 @@ export const Banner = () => {
               className="h-title text-5xl md:text-6xl font-bold leading-11 md:leading-13"
               style={{ fontFamily: 'Bricolage Grotesque' }}
             >
-              Learn the <br /> top
-              <span className="text-[#6339b7]">1% secrets</span> in motion
+              Learn the <br /> top{' '}
+              <span className="text-[#ef9b3c]">1% secrets</span> in motion
               design.
             </h1>
 
@@ -50,7 +50,9 @@ export const Banner = () => {
           <div className="w-full md:w-1/2 relative flex justify-center mt-8 md:mt-0">
             <div className="absolute -bottom-8 flex justify-center items-center right-1/4 sm:right-40 w-56 sm:w-64 h-14 sm:h-16 rounded-lg bg-[#372675] backdrop-blur-2xl animate-floatUpDown">
               <div className="-mt-3 text-center sm:text-left">
-                <h1 className="text-lg sm:text-2xl h-[25px]">Nazmul Hoque</h1>
+                <h1 className="text-lg sm:text-2xl tracking-wide h-[25px]">
+                  Nazmul Hoque
+                </h1>
                 <h1 className="text-xs sm:text-sm h-3">
                   Your motion design mentor
                 </h1>
@@ -65,7 +67,7 @@ export const Banner = () => {
         </div>
 
         {/* Stats Section */}
-        <div className="flex flex-wrap justify-center sm:justify-between items-center mt-16 sm:mt-28 gap-y-8 text-center sm:text-left">
+        <div className="flex flex-wrap justify-center sm:justify-between items-center mt-16 sm:mt-24 gap-y-8 text-center sm:text-left">
           <div className="w-1/2 sm:w-auto">
             <p className="text-lg sm:text-xl text-gray-200">Founder</p>
             <p className="text-sm sm:text-base font-extralight text-gray-400">
@@ -111,7 +113,7 @@ export const Banner = () => {
         </div>
 
         {/* Video Section */}
-        <div className="w-full sm:w-[90%] md:w-[1000px] mx-auto h-[220px] sm:h-[400px] md:h-[600px] rounded-3xl mt-10 md:mt-16 sm:mt-28 overflow-hidden relative border-4 sm:border-[5px] border-[#6339b7]">
+        <div className="w-full  md:w-[1000px] mx-auto h-[220px] sm:h-[400px]  md:h-[600px] rounded-3xl mt-10  sm:mt-20 overflow-hidden relative border-4 sm:border-[5px] border-[#6339b7]">
           {!isPlaying ? (
             <div
               className="w-full h-full cursor-pointer relative"

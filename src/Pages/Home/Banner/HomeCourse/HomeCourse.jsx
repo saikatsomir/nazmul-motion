@@ -8,7 +8,7 @@ export const HomeCourse = () => {
   const videoId = 'nCZbZyyuHRg';
   const thumbnail = thumbail;
   return (
-    <div className="bg-[#0a0612] md:pt-10 pb-40">
+    <div className="bg-[#0a0612] pt-20 px-5 md:px-0 md:pt-32 ">
       <div className="max-w-[1340px] mx-auto  ">
         <div className=" flex flex-col-reverse md:flex-row items-center gap-10 justify-between">
           <div className="w-full md:w-[45%]  md:h-[400px] relative">
@@ -59,7 +59,7 @@ export const HomeCourse = () => {
               >
                 Passionate On Digital Marketer Focused on Driving Results.
               </h1>
-              <h1 className="text-lg text-gray-400 leading-[22px] mt-5 w-[85%]">
+              <h1 className="text-lg text-gray-400 leading-[22px] mt-5 w-full md:w-[85%]">
                 This art form combines creativity, technical skills, and an
                 understanding of storytelling to produce engaging content for
                 various platforms, including film Lorem ipsum dolor sit Lorem,

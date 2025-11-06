@@ -33,7 +33,7 @@ export const Footer = () => {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 pb-10 border-b border-gray-800">
           {/* SITEMAP Section */}
           <div>
-            <h4 className="text-gray-400 uppercase tracking-widest text-sm mb-5 font-semibold">
+            <h4 className="text-gray-400 uppercase tracking-widest text-lg mb-5 font-semibold">
               SITEMAP
             </h4>
             <ul className="space-y-3">
@@ -41,7 +41,7 @@ export const Footer = () => {
                 <li key={item.name}>
                   <a
                     href={item.href}
-                    className="text-white hover:text-purple-400 transition duration-300 text-sm"
+                    className="text-white hover:text-purple-400 transition duration-300 text-lg"
                   >
                     {item.name}
                   </a>
@@ -52,25 +52,25 @@ export const Footer = () => {
 
           {/* CONTACT Section */}
           <div>
-            <h4 className="text-gray-400 uppercase tracking-widest text-sm mb-5 font-semibold">
+            <h4 className="text-gray-400 uppercase tracking-widest text-lg mb-5 font-semibold">
               CONTACT
             </h4>
             <div className="space-y-3">
               <a
                 href="mailto:hello-designer@gerald.com"
-                className="block text-white hover:text-purple-400 transition duration-300 text-sm"
+                className="block text-white hover:text-purple-400 transition duration-300 text-lg"
               >
                 hello-designer@gerald.com
               </a>
               <a
                 href="tel:+011236548096"
-                className="block text-white hover:text-purple-400 transition duration-300 text-sm"
+                className="block text-white hover:text-purple-400 transition duration-300 text-lg"
               >
                 +01 123 654 8096
               </a>
               <a
                 href="tel:+011236548096"
-                className="block text-white hover:text-purple-400 transition duration-300 text-sm"
+                className="block text-white hover:text-purple-400 transition duration-300 text-lg"
               >
                 +01 123 654 8096
               </a>
@@ -79,7 +79,7 @@ export const Footer = () => {
 
           {/* SOCIALS Section */}
           <div>
-            <h4 className="text-gray-400 uppercase tracking-widest text-sm mb-5 font-semibold">
+            <h4 className="text-gray-400 uppercase tracking-widest text-lg mb-5 font-semibold">
               SOCIALS
             </h4>
             <ul className="space-y-3">
@@ -87,7 +87,7 @@ export const Footer = () => {
                 <li key={social.name}>
                   <a
                     href={social.href}
-                    className="flex items-center text-white hover:text-purple-400 transition duration-300 text-sm"
+                    className="flex items-center text-white hover:text-purple-400 transition duration-300 text-lg"
                   >
                     {/* Placeholder for Icon - Replace with an actual library icon */}
                     <span className="mr-2 text-lg font-bold">
@@ -102,7 +102,7 @@ export const Footer = () => {
 
           {/* LEGAL DETAILS Section */}
           <div>
-            <h4 className="text-gray-400 uppercase tracking-widest text-sm mb-5 font-semibold">
+            <h4 className="text-gray-400 uppercase tracking-widest text-lg mb-5 font-semibold">
               LEGAL DETAILS
             </h4>
             <ul className="space-y-3">
@@ -110,7 +110,7 @@ export const Footer = () => {
                 <li key={detail.name}>
                   <a
                     href={detail.href}
-                    className="text-white hover:text-purple-400 transition duration-300 text-sm"
+                    className="text-white hover:text-purple-400 transition duration-300 text-lg"
                   >
                     {detail.name}
                   </a>

@@ -5,7 +5,7 @@ import { SlOrganization } from 'react-icons/sl';
 
 export const WhyMe = () => {
   return (
-    <div className="bg-[#0a0612] z-40 pb-40 relative">
+    <div className="bg-[#0a0612] z-40 py-20 md:py-32 relative">
       {/* Decorative Blurs */}
       <div className="absolute w-96 h-96 bg-[#4107a4] opacity-10 -top-[400px] right-0 blur-[100px]" />
       <div className="max-w-[1340px] mx-auto relative z-40 px-4 md:px-0">
@@ -13,7 +13,7 @@ export const WhyMe = () => {
         <div className="bg-[#0a0612] blur-[10px] w-80 md:w-[500px] h-24 md:h-28 absolute -bottom-20 -left-24 -z-10"></div>
         <div className="bg-[#0a0612] blur-2xl w-80 md:w-[500px] h-24 md:h-28 absolute -bottom-10 -left-28 -z-10"></div>
 
-        <div className="flex flex-col-reverse md:flex-row justify-between gap-16">
+        <div className="flex flex-col-reverse md:flex-row justify-between gap-10 md:gap-16">
           {/* Left Cards */}
           <div className="w-full md:w-[40%] ml-0 md:ml-20 flex flex-col gap-10">
             {/* Experience Card */}
@@ -29,7 +29,7 @@ export const WhyMe = () => {
             </div>
 
             {/* Ui/UX Card */}
-            <div className="border-[0.5px] bg-[#141414]/15 backdrop-blur-2xl border-gray-900 h-40 md:h-40 rounded-2xl flex flex-col md:flex-row justify-center items-center gap-4 relative overflow-hidden">
+            <div className="border-[0.5px] bg-[#141414]/15 backdrop-blur-2xl border-gray-900 h-40 md:h-40 rounded-2xl flex flex-row justify-center items-center gap-4 relative overflow-hidden">
               <div className="absolute w-20 md:w-24 h-20 md:h-24 -bottom-10 -right-10 bg-[#4107a4] blur-[100px]" />
               <div className="border rounded-full w-20 md:w-24 h-20 md:h-24 border-white flex justify-center items-center mb-2 md:mb-0">
                 <Component className="text-white w-12 md:w-16 h-12 md:h-16" />
@@ -51,12 +51,12 @@ export const WhyMe = () => {
               WHY ME
             </p>
             <h1
-              className="text-3xl text-white md:text-5xl font-bold m-3 md:m-0 leading-11"
+              className="text-3xl text-white md:text-5xl font-bold  md:m-0 leading-11"
               style={{ fontFamily: 'Bricolage Grotesque' }}
             >
               Why learn from <br className="hidden md:block" /> Nazmul?
             </h1>
-            <h1 className="text-gray-400 text-sm md:text-lg leading-5 mt-5">
+            <h1 className="text-gray-400 text-lg leading-5 mt-3 md:mt-5">
               I’ve created 4,000+ brand animations for global clients and built
               one of Bangladesh’s top motion design studios — Motionsbay. Now
               I’m sharing everything I’ve learned — from creative process to

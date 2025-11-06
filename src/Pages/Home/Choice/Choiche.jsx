@@ -33,8 +33,8 @@ export const Choice = () => {
   ];
 
   return (
-    <div className="bg-[#0a0612]">
-      <div className="max-w-[1340px] pb-20 md:pb-40  mx-auto">
+    <div className="bg-[#0a0612] px-5 md:px-0">
+      <div className="max-w-[1340px] pt-20 md:pt-32  mx-auto">
         {/* Header */}
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
           <div>
@@ -52,7 +52,7 @@ export const Choice = () => {
         </div>
 
         {/* Cards */}
-        <div className="flex flex-col md:flex-row justify-between items-stretch gap-5 md:gap-8 pt-8 md:pt-16">
+        <div className="flex flex-col md:flex-row justify-between items-stretch gap-5 md:gap-8 pt-8 md:pt-14">
           {cards.map((card, index) => (
             <div
               key={index}

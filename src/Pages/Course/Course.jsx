@@ -1,7 +1,6 @@
 import { Testimonial } from '../Home/Testimonial/Testimonial';
 import { CourseBanner } from './CourseBanner/CourseBanner';
 import { CourseFaq } from './CourseFaq/CourseFaq';
-import { CourseFaq2 } from './CourseFaq/CourseFaq2';
 import { NextBatch } from './NextBatch/NextBatch';
 import { ThisCourse } from './ThisCourse/ThisCourse';
 
@@ -12,8 +11,7 @@ export const Course = () => {
       <NextBatch />
       <ThisCourse />
       <CourseFaq />
-      {/* <CourseFaq2 /> */}
-      <Testimonial />
+      {/* <Testimonial /> */}
     </div>
   );
 };

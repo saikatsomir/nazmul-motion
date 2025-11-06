@@ -163,13 +163,13 @@ export const CourseFaq = () => {
 
   return (
     <div
-      className=" -mt-10 z-50"
+      className=" -mt-10 pb-20 md:pb-32 z-50 px-5 md:px-0"
       style={{
         background:
           'linear-gradient(0deg, rgba(10,6,18,1) 40%, rgba(17,6,39,1) 100%)',
       }}
     >
-      <div className="max-w-[1340px] mx-auto text-white border border-gray-800 py-16 rounded-3xl z-10 bg-[#0a0612]/30 ">
+      <div className="max-w-[1340px] mx-auto text-white md:border border-gray-800 py-16 rounded-3xl z-10 bg-[#0a0612]/30 ">
         <h1
           className="text-4xl sm:text-5xl font-semibold mb-10 z-50 text-center"
           style={{ fontFamily: 'Bricolage Grotesque' }}

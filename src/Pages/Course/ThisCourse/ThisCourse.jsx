@@ -57,39 +57,20 @@ export const ThisCourse = () => {
   ];
 
   const [isPlaying, setIsPlaying] = useState(false);
-
   const videoId = 'nCZbZyyuHRg';
   const thumbnail = thumbail;
 
   return (
     <div
-      className=" pb-32 z-40"
+      className="pb-32 z-40"
       style={{
         background:
           'linear-gradient(0deg,rgba(17, 7, 38, 1) 0%, rgba(10, 6, 18, 1) 100%)',
       }}
     >
       <div className="max-w-[1340px] mx-auto px-4 pt-10">
-        {/* <h1 className="text-3xl text-white text-center font-bold pt-20">
-          এই কোর্সে তুমি কী শিখবে?
-        </h1>
-
-        <div className="flex justify-center gap-6 flex-wrap mt-10">
-          {skills.map((skill, i) => {
-            const color = colors[i % colors.length];
-            return (
-              <div
-                key={i}
-                className={`${color.bg} ${color.text} px-6 py-3 rounded-xl font-medium text-lg transition-transform duration-300 hover:scale-105 cursor-default`}
-              >
-                {skill}
-              </div>
-            );
-          })}
-        </div> */}
-
         {/* ===== YouTube Section ===== */}
-        <div className="w-[1000px] mx-auto h-[600px] rounded-3xl  overflow-hidden relative border-[5px] border-[#6339b7]">
+        <div className="w-full max-w-[1000px] mx-auto h-[250px] md:h-[450px] lg:h-[600px] rounded-3xl overflow-hidden relative border-[5px] border-[#6339b7]">
           {!isPlaying ? (
             <div
               className="w-full h-full cursor-pointer relative"
@@ -101,9 +82,8 @@ export const ThisCourse = () => {
                 className="w-full h-full bg-black/20 object-cover"
               />
               <div className="absolute inset-0 bg-black/30"></div>
-
               <div className="absolute inset-0 flex items-center justify-center">
-                <div className="w-20 h-20 rounded-full bg-black flex items-center justify-center hover:scale-110 transition-transform duration-300">
+                <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-black flex items-center justify-center hover:scale-110 transition-transform duration-300">
                   <div className="ml-1 w-0 h-0 border-l-8 border-l-white border-t-6 border-t-transparent border-b-6 border-b-transparent"></div>
                 </div>
               </div>
@@ -120,31 +100,31 @@ export const ThisCourse = () => {
           )}
         </div>
 
-        <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-10 relative">
-          <div className="absolute w-[120%] bg-[#110726] h-32 -left-36 -bottom-16 z-10 blur-[20px] " />
-          <div className="absolute w-[120%] bg-[#110726] h-32 -left-36 bottom-5 z-10 blur-[45px]" />
+        <div className="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10 relative">
+          <div className="absolute w-[120%] bg-[#110726] hidden md:block h-32 -left-36 -bottom-16 z-10 blur-[20px]" />
+          <div className="absolute w-[120%] bg-[#110726] h-32 hidden md:block -left-36 bottom-5 z-10 blur-[45px]" />
 
           {path.map((item, i) => (
             <div
               key={i}
-              className={`relative border ${item.border} rounded-2xl p-8 text-white backdrop-blur-md bg-white/5 transition-all duration-300 overflow-hidden h-[400px]`}
+              className={`relative border ${item.border} rounded-2xl p-6 sm:p-8 text-white backdrop-blur-md bg-white/5 transition-all duration-300 overflow-hidden h-auto  md:h-[400px]`}
             >
               <div
-                className={`absolute w-full h-10 blur-2xl   -top-10  left-0 ${item.bg}`}
+                className={`absolute w-full h-10 blur-2xl -top-10 left-0 ${item.bg}`}
               ></div>
-              <div className="flex ">
+              <div className="flex">
                 <img
                   src={item.img}
                   alt={item.name}
-                  className="w-16 h-16 mb-2"
+                  className="w-14 h-14 sm:w-16 sm:h-16 mb-2"
                 />
               </div>
-              <h2 className="text-xl font-semibold  mb-4">{item.name}</h2>
-              <p className="text-gray-300 text-base leading-relaxed text-justify">
+              <h2 className="text-lg sm:text-xl font-semibold mb-3 sm:mb-4">
+                {item.name}
+              </h2>
+              <p className="text-gray-300 text-sm sm:text-base leading-relaxed text-justify">
                 {item.description}
               </p>
-
-              {/* Soft glowing border effect */}
               <div
                 className={`absolute inset-0 rounded-2xl border ${item.border} opacity-20 blur-md`}
               ></div>

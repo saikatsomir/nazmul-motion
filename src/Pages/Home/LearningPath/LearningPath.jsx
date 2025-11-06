@@ -115,14 +115,14 @@ export const LearningPath = () => {
   }, []);
 
   return (
-    <div className="relative bg-[#0a0612] text-white pb-40">
+    <div className="relative bg-[#0a0612] text-white  pt-20 md:pt-32">
       <div className="absolute w-96 h-96 bg-[#4107a4] opacity-15 top-0 right-0 blur-[100px] z-50" />
       <div className="absolute w-96 h-96 bg-[#4107a4] opacity-15 top-1/3 left-0 blur-[100px] z-50" />
       <div className="absolute w-96 h-96 bg-[#4107a4] opacity-5 bottom-0 right-0 blur-[100px] z-50" />
 
       <div
         ref={containerRef}
-        className="max-w-[1140px] mx-auto relative px-4 md:px-0"
+        className="max-w-[1140px] mx-auto relative px-5 md:px-0"
       >
         <div className="absolute left-1/2 transform -translate-x-1/2 top-0 bottom-[250px] flex justify-center">
           <div className="border-l-2 border-dashed border-gray-600 absolute top-52 bottom-0"></div>
@@ -192,18 +192,24 @@ export const LearningPath = () => {
                     )}
                     <div className="flex flex-col md:flex-row gap-3 items-center">
                       {!isLeft && (
-                        <div className="border border-gray-700 w-16 h-16 rounded-full flex justify-center items-center mb-3 md:mb-0">
-                          {track.icon}
+                        <div>
+                          <div className="border border-gray-700 w-16 h-16 rounded-full flex justify-center items-center mb-3 md:mb-0">
+                            {track.icon}
+                          </div>
                         </div>
                       )}
                       <div>
-                        <h3 className="text-xl md:text-2xl font-semibold">
+                        <h3
+                          className={`text-xl text-center md:text-2xl font-semibold ${
+                            !isLeft ? 'text-left w-full md:w-[90%]' : ''
+                          } ${isLeft ? 'md:text-right' : ''}`}
+                        >
                           {track.title}
                         </h3>
                         <p
-                          className={`text-gray-400 text-sm md:text-lg leading-5 pt-2 ${
-                            isLeft ? 'md:w-[90%]' : ''
-                          }`}
+                          className={`text-gray-400 text-center text-lg leading-5 pt-2 ${
+                            !isLeft ? 'text-left w-full md:w-[90%]' : ''
+                          } ${isLeft ? ' text-right' : ''}`}
                         >
                           {track.description}
                         </p>

@@ -10,11 +10,11 @@ export const ServiceSkills = () => {
   ];
 
   return (
-    <div className="bg-[#0a0612]">
-      <div className="max-w-[1340px]  py-20 md:py-40 mx-auto ">
+    <div className="bg-[#0a0612] ">
+      <div className="max-w-[1340px]  pt-20 md:pt-28 mx-auto ">
         <div>
           <h1
-            className="text-3xl md:text-5xl font-medium text-center text-white py-8 md:mb-16"
+            className="text-3xl md:text-5xl font-medium text-center text-white mb-10 md:mb-10"
             style={{ fontFamily: 'Bricolage Grotesque' }}
           >
             Learn high-demand <br className="hidden md:block" /> skills{' '}
