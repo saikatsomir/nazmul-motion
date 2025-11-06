@@ -49,7 +49,7 @@ export const Navbar = () => {
         </div>
 
         {/* Button / Hamburger */}
-        <div className="w-[20%] flex justify-end items-center">
+        <div className="md:w-[20%] flex justify-end items-center">
           <button
             style={{
               background:

@@ -10,18 +10,19 @@ export const ServiceSkills = () => {
   ];
 
   return (
-    <div className="bg-[#0a0612] py-40">
-      <div className="max-w-[1340px] mx-auto">
+    <div className="bg-[#0a0612]">
+      <div className="max-w-[1340px]  py-20 md:py-40 mx-auto ">
         <div>
           <h1
-            className="text-5xl font-medium text-center text-white mb-16"
+            className="text-3xl md:text-5xl font-medium text-center text-white py-8 md:mb-16"
             style={{ fontFamily: 'Bricolage Grotesque' }}
           >
-            Learn high-demand <br /> skills that AI will never replace.
+            Learn high-demand <br className="hidden md:block" /> skills{' '}
+            <br className="block md:hidden" /> that AI will never replace.
           </h1>
 
           {/* First Row */}
-          <div className="flex justify-center gap-6 mb-6">
+          <div className="flex justify-center flex-wrap  gap-6 mb-6">
             {skills.slice(0, 2).map((skill, i) => (
               <div
                 key={i}
@@ -29,7 +30,7 @@ export const ServiceSkills = () => {
                   background:
                     'linear-gradient(-90deg,rgba(251, 179, 95, 1) 15%, rgba(107, 91, 248, 1) 82%)',
                 }}
-                className="text-white text-[15px] md:text-xl font-medium w-72 text-center px-4 py-4 rounded-full hover:bg-[#d9d9d9] transition"
+                className="text-white text-[15px] md:text-xl font-medium w-80 md:w-72 text-center px-4 py-4 rounded-full hover:bg-[#d9d9d9] transition"
               >
                 {skill}
               </div>
@@ -37,7 +38,7 @@ export const ServiceSkills = () => {
           </div>
 
           {/* Second Row */}
-          <div className="flex justify-center gap-6 mb-6">
+          <div className="flex justify-center flex-wrap gap-6 mb-6">
             {skills.slice(2, 5).map((skill, i) => (
               <div
                 key={i}
@@ -53,7 +54,7 @@ export const ServiceSkills = () => {
           </div>
 
           {/* Third Row */}
-          <div className="flex justify-center gap-6">
+          <div className="flex justify-center flex-wrap gap-6">
             {skills.slice(5, 7).map((skill, i) => (
               <div
                 key={i}

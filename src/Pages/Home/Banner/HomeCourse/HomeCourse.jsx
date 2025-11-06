@@ -8,10 +8,10 @@ export const HomeCourse = () => {
   const videoId = 'nCZbZyyuHRg';
   const thumbnail = thumbail;
   return (
-    <div className="bg-[#0a0612] pt-10 pb-40">
+    <div className="bg-[#0a0612] md:pt-10 pb-40">
       <div className="max-w-[1340px] mx-auto  ">
-        <div className="flex items-center justify-between">
-          <div className="w-[45%]  h-[400px] relative">
+        <div className=" flex flex-col-reverse md:flex-row items-center gap-10 justify-between">
+          <div className="w-full md:w-[45%]  md:h-[400px] relative">
             <div className="absolute w-96 h-10 bg-[#4107a4] -bottom-10 left-1/2 -translate-1/2 blur-[100px]"></div>
             <div className="w-full h-full rounded-3xl  overflow-hidden relative border border-gray-800 ">
               {!isPlaying ? (
@@ -48,18 +48,18 @@ export const HomeCourse = () => {
             </div>
           </div>
 
-          <div className="w-[50%]">
+          <div className="w-full md:w-[50%]">
             <div>
-              <p className="text-sm text-purple-500 font-semibold tracking-widest mb-5">
+              <p className="text-sm text-purple-500 font-semibold tracking-widest mb-3 md:mb-5">
                 BEHIND THE COURSE
               </p>
               <h1
-                className="text-5xl font-medium text-white"
+                className="text-3xl md:text-5xl font-medium text-white"
                 style={{ fontFamily: 'Bricolage Grotesque' }}
               >
                 Passionate On Digital Marketer Focused on Driving Results.
               </h1>
-              <h1 className="text-lg text-gray-400 mt-5 w-[85%]">
+              <h1 className="text-lg text-gray-400 leading-[22px] mt-5 w-[85%]">
                 This art form combines creativity, technical skills, and an
                 understanding of storytelling to produce engaging content for
                 various platforms, including film Lorem ipsum dolor sit Lorem,

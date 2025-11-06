@@ -33,8 +33,8 @@ export const Choice = () => {
   ];
 
   return (
-    <div className="bg-[#0a0612] pb-32 px-4">
-      <div className="max-w-[1340px] mx-auto">
+    <div className="bg-[#0a0612]">
+      <div className="max-w-[1340px] pb-20 md:pb-40  mx-auto">
         {/* Header */}
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
           <div>
@@ -42,28 +42,17 @@ export const Choice = () => {
               YOUR CAREER
             </p>
             <h1
-              className="text-4xl md:text-5xl text-white font-medium leading-snug"
+              className="text-3xl md:text-5xl text-white font-medium "
               style={{ fontFamily: 'Bricolage Grotesque' }}
             >
               Why motion design <br className="hidden md:block" /> is a best
               career choice?
             </h1>
           </div>
-
-          {/* <button
-            style={{
-              background:
-                'linear-gradient(-90deg,rgba(251, 179, 95, 1) 15%, rgba(107, 91, 248, 1) 82%)',
-            }}
-            className="text-white font-medium text-lg w-44 md:w-52 h-12 rounded-full flex justify-center items-center gap-3"
-          >
-            Learn More
-            <MdArrowOutward className="text-2xl" />
-          </button> */}
         </div>
 
         {/* Cards */}
-        <div className="flex flex-col md:flex-row justify-between items-stretch gap-8 pt-16">
+        <div className="flex flex-col md:flex-row justify-between items-stretch gap-5 md:gap-8 pt-8 md:pt-16">
           {cards.map((card, index) => (
             <div
               key={index}
@@ -79,11 +68,11 @@ export const Choice = () => {
                   <div>
                     <Podcast className="text-purple-500 w-20 h-20" />
                   </div>
-                  <h2 className="text-white text-2xl md:text-3xl font-semibold">
+                  <h2 className="text-white text-2xl md:text-3xl leading-8 font-semibold">
                     {card.title}
                   </h2>
                 </div>
-                <p className="text-gray-400 text-base md:text-lg mb-5 leading-relaxed">
+                <p className="text-gray-400 text-lg mb-5 leading-5">
                   {card.desc}
                 </p>
               </div>
@@ -94,7 +83,7 @@ export const Choice = () => {
                     key={i}
                     className="flex gap-2 items-center text-white text-base"
                   >
-                    <MdVerified className="text-blue-600" /> {point}
+                    <MdVerified className="text-blue-600 " /> {point}
                   </p>
                 ))}
               </div>
