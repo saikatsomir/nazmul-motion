@@ -29,6 +29,24 @@ export const Main = () => {
         </span>
       </div>
 
+      <div
+        className="fixed bottom-5 md:bottom-5 cursor-pointer hidden md:flex left-5 md:left-2 z-50 w-70 h-20 border  rounded-md backdrop-blur-[100px]  justify-center items-center border-gray-700 scale-90"
+        style={{
+          background:
+            'linear-gradient(-90deg,rgba(251, 179, 95, 1) 15%, rgba(107, 91, 248, 1) 82%)',
+        }}
+      >
+        <div>
+          <h1 className="text-white text-base pb-2">
+            এনরোলমেন্ট শুরুঃ ১০ ই ডিসেম্বর, ২০২৫
+          </h1>
+
+          <h1 className="text-white text-base">
+            এনরোলমেন্ট শেষঃ ৮ ই জানুয়ারী ২০২৬
+          </h1>
+        </div>
+      </div>
+
       {!isAdminRoute && <Navbar />}
 
       <Outlet />
