@@ -1,13 +1,13 @@
 import { motion, AnimatePresence } from 'framer-motion';
-import { useState } from 'react';
+import { forwardRef, useState } from 'react';
 import { ChevronDown } from 'lucide-react';
 
-export const CourseFaq = () => {
+export const CourseFaq = forwardRef((props, ref) => {
   const faqs = [
     {
-      title: 'After Effects Basics',
+      title: 'আফটার ইফেক্টসের বেসিক',
       subtitle:
-        'Learn the basics first so that you understand how After effects works',
+        'শুরুতে আফটার ইফেক্টস সফটওয়্যার কীভাবে কাজ করে, তার বেসিক ফাংশন, ইন্টারফেস আর ওয়ার্কফ্লো একদম পরিষ্কারভাবে শিখবেন।',
       points: [
         'After Effects Interface - Preferences Settings  & Custom Workspaces',
         'Install scripts and organize workspace',
@@ -51,8 +51,8 @@ export const CourseFaq = () => {
       ],
     },
     {
-      title: 'Social Media Ads Motion',
-      subtitle: 'Design and animate social media ads that engage the audience.',
+      title: 'সোশ্যাল মিডিয়া বিজ্ঞাপনের মোশন',
+      subtitle: 'ফেসবুক, ইনস্টাগ্রামসহ সোশ্যাল মিডিয়ার জন্য আকর্ষণীয়, স্ক্রল থামিয়ে দেওয়ার মতো মোশন বিজ্ঞাপন ডিজাইন ও অ্যানিমেট করবেন।',
       points: [
         'Design in illustrator with references',
         'Import from illustrator',
@@ -61,9 +61,9 @@ export const CourseFaq = () => {
       ],
     },
     {
-      title: 'Lottie & Web Motion',
+      title: 'লটটি  ও ওয়েব মোশন',
       subtitle:
-        'Bring your work to websites and apps with code-ready animations.',
+        'ওয়েবসাইট ও অ্যাপে ব্যবহারযোগ্য লোটি অ্যানিমেশনসহ কোড–রেডি মোশন কীভাবে তৈরি করতে হয়, তা প্র্যাকটিক্যালভাবে শিখবেন।',
       points: [
         'Download vector icons',
         'Refine it in illustrator',
@@ -72,9 +72,9 @@ export const CourseFaq = () => {
       ],
     },
     {
-      title: 'App or Web Showcase animation',
+      title: 'অ্যাপ ও ওয়েব শোকেস অ্যানিমেশন',
       subtitle:
-        'Take screenshots from clients and turn it into an amazing motion showcase',
+        'ক্লায়েন্টের দেওয়া স্ক্রিনশটকে প্রিমিয়াম লুকের অ্যাপ/ওয়েব শোকেস ভিডিওতে রূপ দেওয়ার সম্পূর্ণ প্রসেস শিখবেন।',
       points: [
         '3D Camera technique',
         'Transitions',
@@ -83,8 +83,8 @@ export const CourseFaq = () => {
       ],
     },
     {
-      title: 'Motion for Video Editing',
-      subtitle: 'Learn the amazing 3D animation technique like Iman gadzhi',
+      title: 'ভিডিও এডিটিংয়ের জন্য মোশন',
+      subtitle: 'ভিডিও এডিটের ভেতরে মোশন যোগ করে কীভাবে আরও সিনেম্যাটিক ও ডায়নামিক লুক আনা যায়, সেই টেকনিকগুলো শিখবেন।',
       points: [
         'Design in illustrator',
         'Premiere pro and After Effects workflow',
@@ -95,8 +95,8 @@ export const CourseFaq = () => {
       ],
     },
     {
-      title: 'Explainer Video',
-      subtitle: 'Turn stories into a compelling motion that sells ideas.',
+      title: 'এক্সপ্লেইনার ভিডিও',
+      subtitle: 'জটিল আইডিয়াকে ছোট ছোট ভিজ্যুয়াল সিনে ভেঙে কীভাবে প্রফেশনাল এক্সপ্লেইনার ভিডিও বানাতে হয়, তা স্টেপ–বাই–স্টেপ শিখবেন।',
       points: [
         'Script, Voice over and Structure',
         '30s 3-act explainer video',
@@ -108,8 +108,8 @@ export const CourseFaq = () => {
       ],
     },
     {
-      title: 'SaaS Explainers',
-      subtitle: 'Animate user flows, dashboards, and product journeys.',
+      title: 'সাস প্রোডাক্ট এক্সপ্লেইনার',
+      subtitle: 'ড্যাশবোর্ড, ইউজার ফ্লো, গ্রাফ, স্ট্যাটস—এই সবকিছুকে পরিষ্কার ও ঝরঝরে মোশনে উপস্থাপন করা শিখবেন, যা SaaS প্রোডাক্টের জন্য খুব দরকারি।',
       points: [
         'Recreate screenshots from a dashboard in illustrator',
         'Gradients, glow, glass effects and futuristic style in After effects',
@@ -118,8 +118,8 @@ export const CourseFaq = () => {
       ],
     },
     {
-      title: 'Logo Animation',
-      subtitle: 'Learn to animate brand identities that feel alive',
+      title: 'লোগো অ্যানিমেশন',
+      subtitle: 'ব্র্যান্ড আইডেন্টিটিকে “অ্যালাইভ” ফিল করানোর মতো প্রিমিয়াম লোগো অ্যানিমেশন কনসেপ্ট ও টেকনিক শিখবেন।',
       points: [
         'Take a logo and suitable for animation in illustrator',
         'Generate an idea for the logo animation',
@@ -135,8 +135,8 @@ export const CourseFaq = () => {
       ],
     },
     {
-      title: 'Tips for freelancing or passive income through motion',
-      subtitle: '',
+      title: 'এক্সক্লুসিভ টিপস',
+      subtitle: 'ফ্রিল্যান্সিং, প্রাইসিং, ক্লায়েন্ট হ্যান্ডলিং এবং প্যাসিভ ইনকামের জন্য আলাদা এক্সক্লুসিভ গাইডলাইন ও টিপস পাবেন।',
       points: [
         'Envato',
         'Fiverr',
@@ -146,16 +146,22 @@ export const CourseFaq = () => {
       ],
     },
     {
-      title: 'After finishing this course, you will be able to create',
+      title: 'কোর্স শেষে যা পাবেন',
       subtitle:
-        'You will have a strong ready portfolio to show your clients and starts earning',
+        'কোর্স শেষে আপনার হাতে থাকবে শক্তিশালী পোর্টফোলিও এবং রিয়াল ক্লায়েন্ট প্রজেক্ট শুরু করার মতো কনফিডেন্স ও দক্ষতা।',
       points: [
-        'Tooling you’ll use',
-        'After Effects',
-        'Illustrator',
-        'Figma',
-        'Bodymovin/Lottie',
+        '30 sec Explainer video',
+        '20 sec SaaS explainer',
+        '15 sec Social media ads',
+        '30 sec App showcase animation',
+        '20 sec Motion for video editing',
+        '3 Logo animations',
       ],
+    },
+    {
+      title: 'যে টুলগুলো ব্যবহার করবেন',
+      subtitle: 'পুরো কোর্স জুড়ে যে সফটওয়্যার, প্লাগইন ও টুল ব্যবহার করা হবে, সেগুলোর জন্য আলাদা গাইডেন্স ও প্র্যাকটিক্যাল ওয়ার্কফ্লো শিখবেন।',
+      points: ['After Effects', 'Illustrator', 'Figma', 'Bodymovin/Lottie'],
     },
   ];
 
@@ -163,25 +169,26 @@ export const CourseFaq = () => {
 
   return (
     <div
-      className=" -mt-10 pb-20 md:pb-32 z-50 px-5 md:px-0"
+      ref={ref}
+      className="  -mt-10 pb-20 md:pb-32 z-50 px-5 md:px-0"
       style={{
         background:
           'linear-gradient(0deg, rgba(10,6,18,1) 40%, rgba(17,6,39,1) 100%)',
       }}
     >
-      <div className="max-w-[1340px] mx-auto text-white md:border border-gray-800 py-16 rounded-3xl z-10 bg-[#0a0612]/30 ">
+      <div className="max-w-[1340px] mx-auto text-white md:border border-[#29036f] py-16 rounded-3xl z-10 md:bg-[#0a0612]/30 ">
         <h1
-          className="text-4xl sm:text-5xl font-semibold mb-10 z-50 text-center"
+          className="text-4xl sm:text-5xl font-medium mb-10 z-50 text-center"
           style={{ fontFamily: 'Bricolage Grotesque' }}
         >
-          Course Duration: <span className="text-purple-400">3–4 months</span>
+          কোর্সের সময়কাল: <span className="text-purple-400">৩–৪ মাস</span>
         </h1>
 
         <div className="space-y-4 max-w-5xl mx-auto">
           {faqs.map((faq, index) => (
             <div
               key={index}
-              className=" backdrop-blur-md rounded-2xl border border-gray-900 overflow-hidden "
+              className=" backdrop-blur-md rounded-2xl border border-[#1c0150] overflow-hidden "
             >
               <button
                 className="w-full flex justify-between items-center px-6 py-6 text-left transition-colors duration-300 cursor-pointer"
@@ -190,7 +197,7 @@ export const CourseFaq = () => {
                 }
               >
                 <div>
-                  <h2 className="text-2xl font-semibold">{faq.title}</h2>
+                  <h2 className="text-2xl ">{faq.title}</h2>
                   <p className="text-base text-gray-400">{faq.subtitle}</p>
                 </div>
                 <motion.div
@@ -228,4 +235,4 @@ export const CourseFaq = () => {
       </div>
     </div>
   );
-};
+});

@@ -1,47 +1,76 @@
-import React from 'react';
-
+import {
+  FaInstagram,
+  FaLinkedin,
+  FaFacebook,
+  FaBehance,
+  FaYoutube,
+  FaWhatsapp,
+} from 'react-icons/fa';
+import { FaSquareXTwitter } from 'react-icons/fa6';
 export const Footer = () => {
   // Data structure for easy mapping
   const sitemap = [
-    { name: 'Work', href: '#' },
-    { name: 'Service', href: '#' },
-    { name: 'Resume', href: '#' },
-    { name: 'Skills', href: '#' },
-    { name: 'Contact', href: '#' },
+    { name: 'Home', href: '/' },
+    { name: 'Course Details', href: '/course-details' },
+    { name: 'About Me', href: '/about-me' },
   ];
 
   const legalDetails = [
-    { name: 'Policy Privacy', href: '#' },
-    { name: 'Term & Conditions', href: '#' },
-    { name: 'Refund and Cancellation', href: '#' },
-    { name: 'Disclaimer', href: '#' },
+    { name: 'Policy Privacy', href: '/privacy' },
+    { name: 'Term & Conditions', href: '/terms' },
   ];
 
   const socialLinks = [
-    { name: 'Behance', icon: 'Be', href: '#' }, // Using simple text for icon placeholder
-    { name: 'Dribbble', icon: 'Dr', href: '#' }, // You'd replace these with actual icons (e.g., from Lucide, Heroicons, etc.)
-    { name: 'Instagram', icon: 'In', href: '#' },
-    { name: 'Twitter', icon: 'Tw', href: '#' },
+    {
+      name: 'Instagram',
+      icon: <FaInstagram />,
+      href: ' https://www.instagram.com/nazmul.motion',
+    },
+    {
+      name: 'LinkedIn',
+      icon: <FaLinkedin />,
+      href: 'https://www.linkedin.com/in/nazmul-hoque-motion-designer/',
+    },
+    {
+      name: 'Facebook',
+      icon: <FaFacebook />,
+      href: ' https://www.facebook.com/nazmul.motion/',
+    },
+    {
+      name: 'Behance',
+      icon: <FaBehance />,
+      href: 'https://www.behance.net/nazmulhoque41',
+    },
+    {
+      name: 'YouTube',
+      icon: <FaYoutube />,
+      href: ' https://www.youtube.com/@nazmul.motion',
+    },
+    {
+      name: 'Twitter',
+      icon: <FaSquareXTwitter />,
+      href: ' https://x.com/nazmulmotion',
+    },
   ];
 
   return (
     <footer className="bg-[#0a0612] text-white pt-20 pb-4 relative overflow-hidden">
       <div className="absolute w-48 h-28 -left-20 bottom-0 bg-[#4107a4] blur-[100px]" />
       <div className="absolute w-48 h-28 right-20 -top-32 bg-[#4107a4] blur-[100px]" />
-      <div className="max-w-[1340px] mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-[1340px]  mx-auto ">
         {/* Main Footer Content Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 pb-10 border-b border-gray-800">
+        <div className="grid grid-cols-1 px-4 md:px-0 gap-10 md:gap-0 md:grid-cols-4  pb-10 border-b border-gray-800">
           {/* SITEMAP Section */}
           <div>
-            <h4 className="text-gray-400 uppercase tracking-widest text-lg mb-5 font-semibold">
+            <h4 className="text-gray-400 uppercase tracking-widest text-lg mb-2 md:mb-5 font-semibold">
               SITEMAP
             </h4>
-            <ul className="space-y-3">
+            <ul className="md:space-y-3 space-y-1">
               {sitemap.map((item) => (
                 <li key={item.name}>
                   <a
                     href={item.href}
-                    className="text-white hover:text-purple-400 transition duration-300 text-lg"
+                    className="text-white hover:text-[#ef9b3c] transition duration-300 text-lg"
                   >
                     {item.name}
                   </a>
@@ -52,71 +81,63 @@ export const Footer = () => {
 
           {/* CONTACT Section */}
           <div>
-            <h4 className="text-gray-400 uppercase tracking-widest text-lg mb-5 font-semibold">
+            <h4 className="text-gray-400 uppercase tracking-widest text-lg mb-2 md:mb-5 font-semibold">
               CONTACT
             </h4>
-            <div className="space-y-3">
+            <div className="md:space-y-3 space-y-1">
               <a
                 href="mailto:hello-designer@gerald.com"
-                className="block text-white hover:text-purple-400 transition duration-300 text-lg"
+                className="block text-white hover:text-[#ef9b3c] transition duration-300 text-lg"
               >
-                hello-designer@gerald.com
+                nazmulmotionbd@gmail.com
               </a>
               <a
                 href="tel:+011236548096"
-                className="block text-white hover:text-purple-400 transition duration-300 text-lg"
+                className=" text-white hover:text-[#ef9b3c] transition duration-300 text-lg flex items-center gap-2"
               >
-                +01 123 654 8096
-              </a>
-              <a
-                href="tel:+011236548096"
-                className="block text-white hover:text-purple-400 transition duration-300 text-lg"
-              >
-                +01 123 654 8096
+                <FaWhatsapp /> WhatsApp
               </a>
             </div>
           </div>
 
-          {/* SOCIALS Section */}
-          <div>
-            <h4 className="text-gray-400 uppercase tracking-widest text-lg mb-5 font-semibold">
-              SOCIALS
-            </h4>
-            <ul className="space-y-3">
-              {socialLinks.map((social) => (
-                <li key={social.name}>
-                  <a
-                    href={social.href}
-                    className="flex items-center text-white hover:text-purple-400 transition duration-300 text-lg"
-                  >
-                    {/* Placeholder for Icon - Replace with an actual library icon */}
-                    <span className="mr-2 text-lg font-bold">
-                      {social.icon}
-                    </span>
-                    {social.name}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-
           {/* LEGAL DETAILS Section */}
-          <div>
-            <h4 className="text-gray-400 uppercase tracking-widest text-lg mb-5 font-semibold">
+          <div className="">
+            <h4 className="text-gray-400 uppercase tracking-widest text-lg mb-2 md:mb-5 font-semibold">
               LEGAL DETAILS
             </h4>
-            <ul className="space-y-3">
+            <ul className="md:space-y-3 space-y-1">
               {legalDetails.map((detail) => (
                 <li key={detail.name}>
                   <a
                     href={detail.href}
-                    className="text-white hover:text-purple-400 transition duration-300 text-lg"
+                    className="text-white hover:text-[#ef9b3c] transition duration-300 text-lg"
                   >
                     {detail.name}
                   </a>
                 </li>
               ))}
             </ul>
+          </div>
+          {/* SOCIALS Section */}
+          <div className=" ml-0 md:-ml-5">
+            <h4 className="text-gray-400  uppercase tracking-widest text-lg mb-2 md:mb-5 font-semibold">
+              SOCIALS
+            </h4>
+
+            <div className="flex items-center flex-wrap gap-3">
+              {socialLinks.map((social) => (
+                <a
+                  key={social.name}
+                  href={social.href}
+                  className="w-12 h-12 flex  items-center justify-center rounded-full border border-gray-600 
+                   text-white text-xl hover:bg-purple-500 hover:border-purple-500 transition duration-300"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {social.icon}
+                </a>
+              ))}
+            </div>
           </div>
         </div>
 

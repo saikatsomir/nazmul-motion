@@ -1,33 +1,33 @@
-import { Podcast } from 'lucide-react';
-import { MdArrowOutward, MdVerified } from 'react-icons/md';
+import { Podcast } from "lucide-react";
+import { MdArrowOutward, MdVerified } from "react-icons/md";
 
 export const Choice = () => {
   const cards = [
     {
-      title: 'Multiple Income Streams',
-      desc: 'Learn skills that open diverse earning opportunities — from freelancing and agency ',
+      title: "এক স্কিলে বহু || আয়ের সুযোগ",
+      desc: "এমন স্কিল শিখুন, যা আপনাকে বিভিন্ন দিক থেকে আয় করার সুযোগ দেয়—ফ্রিল্যান্সিং হোক বা এজেন্সি, টেমপ্লেট হোক বা প্যাসিভ ইনকাম। ",
       points: [
-        'Freelance & agency opportunities',
-        'Sell templates & courses',
-        'Build long-term passive income',
+        "ফ্রিল্যান্স ও এজেন্সি প্রজেক্ট",
+        "টেমপ্লেট ও প্যাক  বিক্রি",
+        "লং–টার্ম প্যাসিভ ইনকাম তৈরি",
       ],
     },
     {
-      title: 'High Demand but Low Competition',
-      desc: 'Master creative skills that few truly excel at. Motion design is in high demand ',
+      title: "চাহিদা বেশি,|| প্রতিযোগিতা কম",
+      desc: "যে ক্রিয়েটিভ স্কিল খুব কম মানুষ সত্যিকারের প্রফেশনালভাবে পারে— সেটা মাস্টার করলে আপনাকে খুঁজবেই ক্লায়েন্ট। ",
       points: [
-        'High-value niche skills',
-        'Steady client demand',
-        'Minimal direct competition',
+        "হাই–ভ্যালু নিস স্কিল",
+        "ধারাবাহিক ক্লায়েন্ট ডিমান্ড",
+        "সরাসরি প্রতিযোগিতা তুলনামূলক কম",
       ],
     },
     {
-      title: 'Small Projects, High Pricing',
-      desc: 'Work smarter, not longer. Create short, impactful projects that deliver big value.',
+      title: "ছোট ছোট কাজেই || প্রিমিয়াম আয়",
+      desc: "কম সময়ে, ছোট আকারের মোশন পিস দিয়েই অনেকসময় বড় ভ্যালু দেওয়া যায়। যার ফলে দামও বেশি, ডেলিভারিও দ্রুত।",
       points: [
-        'High-value motion pieces',
-        'Quick delivery timeline',
-        'Premium pricing potential',
+        "হাই–ভ্যালু মোশন পিস",
+        "দ্রুত ডেলিভারি টাইমলাইন",
+        "প্রিমিয়াম প্রাইসিং সম্ভাবনা",
       ],
     },
   ];
@@ -41,12 +41,10 @@ export const Choice = () => {
             <p className="text-sm text-purple-500 font-semibold tracking-widest mb-2">
               YOUR CAREER
             </p>
-            <h1
-              className="text-3xl md:text-5xl text-white font-medium "
-              style={{ fontFamily: 'Bricolage Grotesque' }}
-            >
-              Why motion design <br className="hidden md:block" /> is a best
-              career choice?
+            <h1 className="text-3xl md:text-[40px] text-white font-medium ">
+              কেন মোশন ডিজাইন
+              <br className="hidden md:block" /> এখন ক্যারিয়ারের জন্য বেস্ট
+              চয়েস?
             </h1>
           </div>
         </div>
@@ -68,11 +66,16 @@ export const Choice = () => {
                   <div>
                     <Podcast className="text-purple-500 w-20 h-20" />
                   </div>
-                  <h2 className="text-white text-2xl md:text-3xl leading-8 font-semibold">
-                    {card.title}
+                  <h2 className="text-white text-xl md:text-[28px] leading-8 font-medium">
+                    {card.title.split("||").map((line, idx) => (
+                      <span key={idx}>
+                        {line.trim()}
+                        <br />
+                      </span>
+                    ))}
                   </h2>
                 </div>
-                <p className="text-gray-400 text-lg mb-5 leading-5">
+                <p className="text-gray-400 text-md mb-5 leading-5">
                   {card.desc}
                 </p>
               </div>
@@ -81,7 +84,7 @@ export const Choice = () => {
                 {card.points.map((point, i) => (
                   <p
                     key={i}
-                    className="flex gap-2 items-center text-white text-base"
+                    className="flex gap-2 items-center text-white text-sm"
                   >
                     <MdVerified className="text-blue-600 " /> {point}
                   </p>

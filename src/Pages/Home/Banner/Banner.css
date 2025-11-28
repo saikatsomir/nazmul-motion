@@ -1,29 +1,33 @@
 @keyframes floatLR {
+
   0%,
   100% {
     transform: translateX(0);
   }
+
   50% {
     transform: translateX(20px);
   }
 }
-.h-title {
-  font-family: 'Bricolage Grotesque', sans-serif;
-}
-.h-des {
-  font-family: 'Syne', sans-serif;
-}
+
+
+
 .animate-floatLR {
   animation: floatLR 6s ease-in-out infinite;
 }
+
 @keyframes floatUpDown {
+
   0%,
   100% {
     transform: translateY(0);
   }
+
   50% {
     transform: translateY(-20px);
-  } /* moves up 20px */
+  }
+
+  /* moves up 20px */
 }
 
 .animate-floatUpDown {

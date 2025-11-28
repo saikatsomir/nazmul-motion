@@ -1,11 +1,12 @@
-import { useState } from 'react';
-import thumbail from './images/thumbnail.jpg';
-import { MdArrowOutward } from 'react-icons/md';
+import { useState } from "react";
+import thumbail from "./images/thumbnail.jpg";
+import { MdArrowOutward } from "react-icons/md";
+import { Link } from "react-router-dom";
 
 export const HomeCourse = () => {
   const [isPlaying, setIsPlaying] = useState(false);
 
-  const videoId = 'nCZbZyyuHRg';
+  const videoId = "nCZbZyyuHRg";
   const thumbnail = thumbail;
   return (
     <div className="bg-[#0a0612] pt-20 px-5 md:px-0 md:pt-32 ">
@@ -53,27 +54,26 @@ export const HomeCourse = () => {
               <p className="text-sm text-purple-500 font-semibold tracking-widest mb-3 md:mb-5">
                 BEHIND THE COURSE
               </p>
-              <h1
-                className="text-3xl md:text-5xl font-medium text-white"
-                style={{ fontFamily: 'Bricolage Grotesque' }}
-              >
-                Passionate On Digital Marketer Focused on Driving Results.
+              <h1 className="text-3xl md:text-[40px] font-medium  text-white ">
+                এই কোর্সের পেছনে শুধু অভিজ্ঞতা নয়—আপনাকে সফল করার একাগ্রতা আছে।
               </h1>
               <h1 className="text-lg text-gray-400 leading-[22px] mt-5 w-full md:w-[85%]">
-                This art form combines creativity, technical skills, and an
-                understanding of storytelling to produce engaging content for
-                various platforms, including film Lorem ipsum dolor sit Lorem,
-                ipsum dolor.
+                এই কোর্সে ভিজুয়াল ডিজাইন, অ্যানিমেশন প্রিন্সিপল এবং
+                স্টোরিটেলিং—এই তিনটি জিনিসকে একসাথে মিলিয়ে শেখানো হবে। যাতে আপনি
+                এমন মোশন তৈরি করতে পারেন যা শুধু সুন্দরই নয়, বরং প্রোডাক্ট,
+                অ্যাপ ও ব্র্যান্ডের আইডিয়াকে স্পষ্টভাবে ব্যাখ্যা করে, দর্শকের
+                মনেও থেকে যায়, এবং মেসেজকে আরও শক্তিশালী করে তোলে।
               </h1>
-              <button
+              <Link
+                to={"/payment"}
                 style={{
                   background:
-                    'linear-gradient(-90deg,rgba(251, 179, 95, 1) 15%, rgba(107, 91, 248, 1) 82%)',
+                    "linear-gradient(-90deg,rgba(251, 179, 95, 1) 15%, rgba(107, 91, 248, 1) 82%)",
                 }}
                 className="text-white font-medium text-lg cursor-pointer w-52 h-12 mt-8 rounded-full flex justify-center items-center gap-3"
               >
                 Enroll Now <MdArrowOutward className="text-2xl" />
-              </button>
+              </Link>
             </div>
           </div>
         </div>
